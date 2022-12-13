@@ -1,0 +1,37 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    /* background-color: #a2c7e6; */
+    /* padding-left: 22%; */
+    /* width:25px; */
+     float: center;
+   /* position: center; */
+   justify-content: center;
+   height: 100%;
+   /* overflow: hidden; */
+  }
+  .heading{
+    font-size: 45px;
+
+  }
+  .grid-item {
+    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    font-size: 30px;
+    text-align: center;
+    /* width:25%; */
+    
+  }
+  .snake{
+    background-color: rgb(243, 124, 124);
+  }
+  .ladder{
+    background-color: rgb(245, 245, 110);
+  }
+  .player1{
+    background-color: rgb(149, 228, 149);
+  }
+  .player2{
+    background-color: rgb(145, 145, 221);
+  }

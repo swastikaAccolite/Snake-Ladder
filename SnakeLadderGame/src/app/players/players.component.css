@@ -1,0 +1,26 @@
+#button {
+    border: none;
+    color: rgb(228, 18, 18);
+    padding: 35px 32px;
+    font-size: 8pt;
+     /* position:absolute; */
+  }
+  .btn-info
+{  
+  /* background-color:white; */
+    border: none;
+    padding: 15px 32px;
+    font-family: tahoma;
+    margin-top: 15px;
+    margin-left: 3%;
+    
+}
+.button2 {
+    /* background-color: white; */
+    border: none;
+    color:  rgb(175, 19, 19);
+    font-family: tahoma;
+    padding: 15px 32px;
+    margin-top: 15px;
+    margin-left: 50%;
+}

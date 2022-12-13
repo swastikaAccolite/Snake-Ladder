@@ -1,8 +1,26 @@
+ <button type="button" class="btn btn-info" (click)="generateNumber1()" [disabled]="disable1">Roll Dice</button>
+Player1 Rolling dice : {{diceNumber1}}
 
-<button (click)="generateNumber1()" [disabled]="disable1">Roll Dice</button>
-Player1 Rolling dice:{{diceNumber1}}
-<br> <br>
-<button (click)="generateNumber2()" [disabled]="disable2">Roll Dice</button>
-Player2 Rolling dice:{{diceNumber2}}
 
-<p></p>
+
+
+
+<button type="button" class="btn btn-info" (click)="generateNumber2()" [disabled]="disable2">Roll Dice</button>
+Player2 Rolling dice : {{diceNumber2}}
+<br>
+   
+   
+    
+
+<span style="margin-left: 15px"> Position of Player1 : {{pos1}}</span>
+<br>
+
+<span style="margin-left: 15px"> Position of Player2 : {{pos2}}</span>
+<!-- <ng-container *ngIf="pos1==100"> Winner1 Won!! </ng-container>
+<ng-container *ngIf="pos2==100"> Winner2 Won!! </ng-container> -->
+
+
+    
+
+
+

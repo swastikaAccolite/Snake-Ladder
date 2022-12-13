@@ -13,21 +13,21 @@ export class PlayersService {
     return diceValue;
   }
 
-  board:number[][] = [[100,99,98,97,96,95,94,93,92,91],
-                      [81,82,83,84,85,86,87,88,89,90],
-                      [80,79,78,77,76,75,74,73,72,71],
-                      [61,62,63,64,65,66,67,68,69,70],
-                      [60,59,58,57,56,55,54,53,52,51],
-                      [41,42,43,44,45,46,47,48,49,50],
-                      [40,39,38,37,36,35,34,33,32,31],
-                      [21,22,23,24,25,26,27,28,29,30],
-                      [20,19,18,17,16,15,14,13,12,11],
-                      [1,2,3,4,5,6,7,8,9,10]];
+//   board:number[][] = [[100,99,98,97,96,95,94,93,92,91],
+//                       [81,82,83,84,85,86,87,88,89,90],
+//                       [80,79,78,77,76,75,74,73,72,71],
+//                       [61,62,63,64,65,66,67,68,69,70],
+//                       [60,59,58,57,56,55,54,53,52,51],
+//                       [41,42,43,44,45,46,47,48,49,50],
+//                       [40,39,38,37,36,35,34,33,32,31],
+//                       [21,22,23,24,25,26,27,28,29,30],
+//                       [20,19,18,17,16,15,14,13,12,11],
+//                       [1,2,3,4,5,6,7,8,9,10]];
 
-getBoard() : number[][]
-{
- return this.board;
-}
+// getBoard() : number[][]
+// {
+//  return this.board;
+// }
 board1= [
   {"curr_pos": 1,
     "take_to": 1},
@@ -68,7 +68,8 @@ board1= [
     "take_to": 10
   },
   {"curr_pos": 11,
-  "take_to": 11},
+  "take_to": 11
+},
 {
   "curr_pos": 12,
   "take_to": 12
@@ -106,7 +107,8 @@ board1= [
   "take_to": 20
 },
 {"curr_pos": 21,
-"take_to": 21},
+"take_to": 21
+},
 {
 "curr_pos": 22,
 "take_to": 22
@@ -218,7 +220,202 @@ board1= [
   {
     "curr_pos": 50,
     "take_to": 50
-  }
+  },
+  {
+  "curr_pos": 51,
+  "take_to": 9
+  },
+  {
+  "curr_pos": 52,
+  "take_to": 52
+  },
+  {
+  "curr_pos": 53,
+  "take_to": 53
+  },
+  {
+  "curr_pos": 54,
+  "take_to": 54
+  },
+  {
+  "curr_pos": 55,
+  "take_to": 55
+  },
+  {
+  "curr_pos": 56,
+  "take_to": 56
+  },
+  {
+  "curr_pos": 57,
+  "take_to": 57
+  },
+  {
+  "curr_pos": 58,
+  "take_to": 58
+  },
+  {
+  "curr_pos": 59,
+  "take_to": 59
+  },
+  {"curr_pos": 60,
+      "take_to": 97},
+    {
+      "curr_pos": 61,
+      "take_to": 61
+    },
+    {
+      "curr_pos": 62,
+      "take_to": 62
+    },
+    {
+      "curr_pos": 63,
+      "take_to": 63
+    },
+    {
+      "curr_pos": 64,
+      "take_to": 64
+    },
+    {
+      "curr_pos": 65,
+      "take_to": 65
+    },
+    {
+      "curr_pos": 66,
+      "take_to": 66
+    },
+    {
+      "curr_pos": 67,
+      "take_to": 67
+    },
+    {
+      "curr_pos":68,
+      "take_to": 68
+    },
+    {
+      "curr_pos": 69,
+      "take_to": 69
+    },
+    {
+    "curr_pos": 70,
+    "take_to": 70
+    },
+    {
+    "curr_pos": 71,
+    "take_to": 71
+    },
+    {
+    "curr_pos": 72,
+    "take_to": 72
+    },
+    {
+    "curr_pos": 73,
+    "take_to": 73
+    },
+    {
+    "curr_pos": 74,
+    "take_to": 74
+    },
+    {
+    "curr_pos": 75,
+    "take_to": 75
+    },
+    {
+    "curr_pos": 76,
+    "take_to": 76
+    },
+    {
+    "curr_pos": 77,
+    "take_to": 77
+    },
+    {
+    "curr_pos": 78,
+    "take_to": 78
+    },
+    {"curr_pos": 79,
+        "take_to": 79},
+      {
+        "curr_pos": 80,
+        "take_to": 94
+      },
+      {
+        "curr_pos": 81,
+        "take_to": 81
+      },
+      {
+        "curr_pos": 82,
+        "take_to": 22
+      },
+      {
+        "curr_pos": 83,
+        "take_to": 83
+      },
+      {
+        "curr_pos": 84,
+        "take_to": 84
+      },
+      {
+        "curr_pos": 85,
+        "take_to": 85
+      },
+      {
+        "curr_pos": 86,
+        "take_to": 86
+      },
+      {
+        "curr_pos": 87,
+        "take_to": 87
+      },
+      {
+        "curr_pos": 88,
+        "take_to": 88
+      },
+      {
+      "curr_pos": 89,
+      "take_to": 89
+      },
+      {
+      "curr_pos": 90,
+      "take_to": 90
+      },
+      {
+      "curr_pos": 91,
+      "take_to": 91
+      },
+      {
+      "curr_pos": 92,
+      "take_to": 1
+      },
+      {
+      "curr_pos": 93,
+      "take_to": 93
+      },
+      {
+      "curr_pos": 94,
+      "take_to": 94
+      },
+      {
+      "curr_pos": 95,
+      "take_to": 95
+      },
+      {
+      "curr_pos": 96,
+      "take_to": 96
+      },
+      {
+      "curr_pos": 97,
+      "take_to": 97
+      },
+      {"curr_pos": 98,
+          "take_to": 98
+        },
+        {
+          "curr_pos": 99,
+          "take_to": 99
+        },
+        {
+          "curr_pos": 100,
+          "take_to": 100
+        }
 ];
 
 
@@ -226,6 +423,10 @@ public z1: number = 0;
 public z2: number = 0;
 
 checkPos(pos:number): number{
+  if(pos>100)
+  {
+    return 0;
+  }
    
  this.z1  = this.board1[pos].curr_pos;
   this.z2= this.board1[pos].take_to;
