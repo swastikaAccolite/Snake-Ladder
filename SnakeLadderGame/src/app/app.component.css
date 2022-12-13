@@ -28,6 +28,9 @@
   }
   .snake{
     background-color: rgb(243, 124, 124);
+    /* display:contents ; */
+    /* background-image: url("22285-snake-icon.png"); */
+    
   }
   .ladder{
     background-color: rgb(245, 245, 110);

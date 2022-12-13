@@ -27,6 +27,13 @@ export class PlayersComponent {
     this.diceNumber1=this.playService.rollDice();
     
     this.pos1+=this.diceNumber1;
+    if(this.pos1 >= 100)
+    {
+      // console.log(111111111111111);
+      alert("Player 1 has won🎉");
+      this.pos1=0;
+      this.pos2=0;
+    }
     //console.log(this.pos1);
     this.pos1 = this.playService.checkPos(this.pos1-1);
     
@@ -41,10 +48,7 @@ export class PlayersComponent {
     //   this.disable1=true;
     // this.disable2=false;
     // }
-    if(this.pos1 >= 100)
-    {
-      alert("Player 1 has won")
-    }
+    
     
     console.log( "Updated Position for Player 1 " + this.pos1);
     this.gotop1.emit(this.pos1);
@@ -56,12 +60,15 @@ export class PlayersComponent {
     this.disable1=false;
     this.disable2=true;
     this.pos2+=this.diceNumber2;
-   // console.log(this.pos2);
-    this.pos2 = this.playService.checkPos(this.pos2-1);
     if(this.pos2 >= 100)
     {
-      alert("Player 2 has won")
+      alert("Player 2 has won🎉");
+      this.pos1=0;
+      this.pos2=0;
     }
+   // console.log(this.pos2);
+    this.pos2 = this.playService.checkPos(this.pos2-1);
+    
 
     console.log( "Updated Position is for player 2 " + this.pos2);
     this.gotop2.emit(this.pos2);
