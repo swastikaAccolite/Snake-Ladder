@@ -18,37 +18,30 @@ export class PlayersComponent {
   public disable1:boolean=false;
   public disable2:boolean=false;
 
-  public pos1 :  number=0;
-  public pos2 :  number=0;
+  public pos1 :  number=95;
+  public pos2 :  number=95;
 
   public winner : boolean = false;
   generateNumber1()
   {
     this.diceNumber1=this.playService.rollDice();
     
+    if((this.pos1+this.diceNumber1)<=100)
     this.pos1+=this.diceNumber1;
     if(this.pos1 >= 100)
     {
-      // console.log(111111111111111);
+      console.log(this.diceNumber1);
       alert("Player 1 has won🎉");
       this.pos1=0;
       this.pos2=0;
+      this.disable1=false;
+      this.disable2=false;
+    return;
     }
-    //console.log(this.pos1);
     this.pos1 = this.playService.checkPos(this.pos1-1);
-    
     this.disable1=true;
     this.disable2=false;
-    // if(this.diceNumber1==6)
-    // {
-    //   this.diceNumber1=this.playService.rollDice();
-    //   this.pos1+=this.diceNumber1;
-    // //console.log(this.pos1);
-    //   this.pos1 = this.playService.checkPos(this.pos1-1);
-    //   this.disable1=true;
-    // this.disable2=false;
-    // }
-    
+
     
     console.log( "Updated Position for Player 1 " + this.pos1);
     this.gotop1.emit(this.pos1);
@@ -57,16 +50,22 @@ export class PlayersComponent {
   generateNumber2()
   {
     this.diceNumber2=this.playService.rollDice();
-    this.disable1=false;
-    this.disable2=true;
+    if((this.pos1+this.diceNumber2)<=100)
     this.pos2+=this.diceNumber2;
-    if(this.pos2 >= 100)
+    if(this.pos2-1 >= 100)
     {
+      console.log(this.diceNumber2);
       alert("Player 2 has won🎉");
       this.pos1=0;
       this.pos2=0;
+      this.disable1=false;
+      this.disable2=false;
+      return;
     }
-   // console.log(this.pos2);
+    this.disable1=false;
+    this.disable2=true;
+    
+   
     this.pos2 = this.playService.checkPos(this.pos2-1);
     
 
@@ -74,11 +73,5 @@ export class PlayersComponent {
     this.gotop2.emit(this.pos2);
 
   }
-
-// showWinner(name : string)
-// {
-// this.winner = true;
-//  alert("Winner is "+name );
-// }
 
 }

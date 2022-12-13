@@ -68,4 +68,15 @@ export class AppComponent {
     return false;
     }
 }
+playerSamePos(k:number):boolean{
+  if(k==this.val1 && k==this.val2)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
 }

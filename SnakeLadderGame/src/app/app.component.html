@@ -11,12 +11,13 @@
         </div>
       <div class="col-md-8">
         <table id="myTable">
-          <div class="grid-container">
-              <ng-container *ngFor="let row of board">
-              <ng-container *ngFor="let num of row" >
-                  <div [class.snake]="snakeornot(num)" [class.ladder]="ladderornot(num)" [class.player1]="playerornot1(num)" [class.player2]="playerornot2(num)"><div class="grid-item" >{{num}}</div></div>
-              </ng-container>
-              </ng-container>
+          <div class="container">
+              <tr *ngFor="let row of board">
+              <td *ngFor="let num of row" >
+                  <div [class.snake]="snakeornot(num)" [class.ladder]="ladderornot(num)" [class.player1]="playerornot1(num)" [class.player2]="playerornot2(num)" [class.playerBoth]="playerSamePos(num)">
+                    <div class="grid-item" >{{num}}</div></div>
+              </td>
+              </tr>
             </div>
           </table>
       </div>

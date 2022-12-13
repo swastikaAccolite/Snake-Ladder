@@ -31,13 +31,27 @@
     /* display:contents ; */
     /* background-image: url("22285-snake-icon.png"); */
     
+    
+  }
+  td{
+    /* border: 1px solid black; */
+    /* background-color: rgb(43, 206, 165); */
+    padding: auto;
+    width : 200px;
+    height : 50px ;
+    text-align : center;
   }
   .ladder{
     background-color: rgb(245, 245, 110);
   }
   .player1{
     background-color: rgb(149, 228, 149);
+    border-radius: 50% ;
   }
   .player2{
     background-color: rgb(145, 145, 221);
+    border-radius: 50% ;
   }
+  .playerBoth{
+    background-image: linear-gradient(rgb(149, 228, 149),rgb(145, 145, 221));
+}
