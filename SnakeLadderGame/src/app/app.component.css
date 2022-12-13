@@ -12,6 +12,9 @@
   }
   .heading{
     font-size: 45px;
+    font-family:'Kenia';
+    padding-left: 15px;
+    margin-left:35% ;
 
   }
   .grid-item {
