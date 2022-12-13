@@ -3,6 +3,7 @@
 * [Only angular is used to develop it]
 * [There are mainly two players and two buttons with which they can play]
 * [When any players gets 100 that player wins and with the next dice roll a new game stars]
+* [Red coloured cells indicates the snakes and the yellow ones are the ladders]
 
 Screenshots of the application running!
 
